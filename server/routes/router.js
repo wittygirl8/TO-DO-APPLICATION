@@ -2,14 +2,23 @@ const express = require('express');
 const route = express.Router();
 const services = require('../services/render');
 
+
+/**
+ *  @description Root Route
+ *  @method GET /
+ */
 route.get('/', services.homeRoutes);
 
-route.get("/add-task",(req, res)=>{
-    res.render('add_task');
-})
+/**
+ *  @description add item
+ *  @method GET /add-item
+ */
+route.get('/add-task', services.addTask);
 
-route.get("/update-task",(req, res)=>{
-    res.render('update_task');
-})
+/**
+ *  @description for update task
+ *  @method GET /update-task
+ */
+route.get('/update-task', services.updateTask);
 
 module.exports = route
