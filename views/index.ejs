@@ -3,7 +3,34 @@
     <%- include('include/_header') %>
 <!--/ include header-->
 
+<!--Main Site-->
+<main id ="site-main">
+    <div class="container">
+        <!--tasks-->
+            <from action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Task</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <%- include('include/_show') %>
+                    </tbody>
+                </table>
+            </from>
+        <!--/tasks-->
+        <!--Add Task-->
+        
+        <div class="box-nav d- flex-justify-between" style="text-align:center;">
+            <a href="/add-task" class="border-shadow"><span class="text-gradient"><i class="fas fa-plus-circle"></i></span></a>
+        </div>
+        <!--/Add Task-->
+    </div>
+</main>
+<!--Main Site-->
 
 <!-- include footer -->
 <%- include('include/_footer') %>
-<!--/ include footer-->>
+<!--/ include footer-->
