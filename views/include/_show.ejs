@@ -1,5 +1,6 @@
+<% for(var i = 0; i<task.length; i++){%>
 <tr>
-    <td>Yoga</td>
+    <td><%= task[i].item%></td>
     <td>
         <a href="/update-task" class="btn border-shadow udate">
             <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
@@ -9,3 +10,4 @@
         </a>
     </td>
 </tr>
+<%}%>
