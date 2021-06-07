@@ -17,7 +17,8 @@ exports.create = (req,res)=>{
     task 
         .save(task)
         .then(data=>{
-            res.send(data)
+            //res.send(data)
+            res.redirect('/')
         })
         .catch(err=>{
             res.status(500).send({

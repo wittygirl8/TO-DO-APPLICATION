@@ -9,7 +9,7 @@ const controller = require('../contoller/controller');
  */
 route.get('/', services.homeRoutes);
 
-/**<!--mongodb+srv://riddhi_singh:m001-mongodb-basics@cluster0.yvc39.mongodb.net/task?retryWrites=true&w=majority-->
+/**
  *  @description add item
  *  @method GET /add-item
  */
@@ -26,6 +26,5 @@ route.post('/api/task',controller.create);
 route.get('/api/task',controller.find);
 route.put('/api/task/:id',controller.update);
 route.delete('/api/task/:id',controller.delete);
-
 
 module.exports = route

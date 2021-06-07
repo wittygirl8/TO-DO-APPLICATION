@@ -212,7 +212,7 @@ table{
     background: #b4b4b4;
 }
 
-#update_user .form-group .btn,
+#update_task .form-group .btn,
 #add_user .form-group .btn{
     width: 100%;
     padding: .9em 1em;
@@ -225,7 +225,7 @@ table{
     margin: .5em 0;
 }
 
-#update_user .form-group .btn:hover,
+#update_task .form-group .btn:hover,
 #add_user .form-group .btn:hover{
     background-color: var(--dark);
     color: var(--border);

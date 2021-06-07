@@ -5,7 +5,7 @@ $("#add_task").submit(function(event){
     alert("Data Inserted Successfully!");
 })
 
-$("#update_task").submit(function(event){
+$("#update_user").submit(function(event){
     event.preventDefault();
 
     var unindexed_array = $(this).serializeArray();
@@ -14,8 +14,7 @@ $("#update_task").submit(function(event){
     $.map(unindexed_array, function(n, i){
         data[n['item']] = n['value']
     })
-
-
+    console.log(data);
     var request = {
         "url" : `http://localhost:3000/api/task/${data.id}`,
         "method" : "PUT",
@@ -25,7 +24,6 @@ $("#update_task").submit(function(event){
     $.ajax(request).done(function(response){
         alert("Data Updated Successfully!");
     })
-
 })
 
 if(window.location.pathname == "/"){
