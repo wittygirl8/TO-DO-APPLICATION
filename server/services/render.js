@@ -15,7 +15,7 @@ exports.addTask = (req,res)=>{
     res.render('add_task');
 }
 
-exports.update_user = (req,res)=>{
+exports.update_task = (req,res)=>{
     axios.get('http://localhost:3000/api/task', { params : { id : req.query.id }})
         .then(function(taskdata){
             res.render("update_task", { task : taskdata.data})

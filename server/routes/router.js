@@ -19,7 +19,7 @@ route.get('/add-task', services.addTask);
  *  @description for update task
  *  @method GET /update-task
  */
-route.get('/update-task', services.updateTask);
+route.get('/update-task', services.update_task);
 
 //API 
 route.post('/api/task',controller.create);
